@@ -1,0 +1,33 @@
+#1 endPoint : POST /api/dna
+
+    req : should be json in form of 
+    {
+        "martyr" : String,
+        "mother_father" : String
+    }
+
+    res : only return 200 OK status code. there is no err hanling.
+    {
+        "data": String
+    }
+
+#2 endPoint : POST /api/msg
+
+    req : should be json in form of 
+    {
+        "data" : String
+    }
+
+    res : only return 200 OK status code. there is no err hanling.
+    {
+        "real_data" : String,
+        "Encode" : String,
+        "Decode" : String
+    }   
+
+to run project :
+    RUN the command on your machine:
+    pip install django django_rest_framework
+
+    then run the server with : 
+    python manage.py runserver
